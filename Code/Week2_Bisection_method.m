@@ -1,13 +1,13 @@
 %% Bisection method
 % function handle (Ctrl+R/T to comment/uncomment)
-% f = @(x) x.^2-2; % finds +-sqrt(2)
+f = @(x) x.^2-2; % finds +-sqrt(2)
 % f = @(x) sin(x); % finds an interger multiple of pi
-f = @(x) g(x, pi);     % can be an arbitrary function g defined later
+% f = @(x) g(x, pi);     % can be an arbitrary function g defined later
                        % here g may accept more than 1 arguments
                        % but note that f is still a ftn of single variable
 
 % initial interval of estimation: [a, b]
-a = 0; b = 7;
+a = 0; b = 2;
 % target accuracy: eps
 eps = 1e-14;
 
